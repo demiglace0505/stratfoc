@@ -63,3 +63,19 @@ export default links
 ```
 
 In the *sections* directory is where the components for each of the home page's can be found. This contains the Hero section, Services section, and Featured section.
+
+### Styling backbone
+
+For the CSS framework, gatsby's styled components plugin was used. I created a directory *themes*, which will hold all the related visual effects and the global theme. The global theme is set using styled-component's **createGlobalStyle** API.
+
+For the global fonts, the plugin [gatsby-plugin-google-fonts](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-fonts/?=google%20fonts) was used. It can be used by declaring in the GlobalStyle component.
+
+```scss
+  body {
+    box-sizing: border-box;
+    background-color: ${backgrounds.bgGreyLight};
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+  }
+```
+
