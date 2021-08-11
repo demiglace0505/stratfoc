@@ -31,6 +31,11 @@ const GlobalStyle = createGlobalStyle`
     color: ${colors.colorBlack}
   }
 
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+  }
+
   a {
     font-size: 1.6rem;
     text-decoration: none;
