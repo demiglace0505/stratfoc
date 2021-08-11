@@ -12,12 +12,13 @@ const Navbar = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
+  padding: 0 10%;
   height: 7rem;
   display: flex;
   z-index: 100;
   align-items: center;
   justify-content: space-between;
-  /* background: ${backgrounds.bgGreyDark}; */
+  background: ${backgrounds.bgGreyDark};
 `
 
 const NavLogoContainer = styled.div`
@@ -26,7 +27,8 @@ const NavLogoContainer = styled.div`
 
 const NavItem = styled.div`
   a {
-    margin-right: 2rem;
+    color: ${colors.colorWhite};
+    margin-right: 1rem;
     text-transform: capitalize;
     font-weight: bold;
     padding: 1rem 0.5rem;
@@ -35,7 +37,7 @@ const NavItem = styled.div`
   }
 
   a:hover {
-    color: ${colors.colorPrimaryDark};
+    color: ${colors.colorPrimaryLight};
   }
 `
 
@@ -45,7 +47,7 @@ const Header = () => {
       <NavLogoContainer>
         <Link to="/">
           <StaticImage
-            src="../images/stratfoc.svg"
+            src="../images/Stratfoc-light.svg"
             alt="Stratfoc logo"
             placeholder="tracedSVG"
           />

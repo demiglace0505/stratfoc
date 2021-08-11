@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     /* CSS wireframe mode */
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
   }
 
   html {
@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     background-color: ${backgrounds.bgGreyLight};
     font-size: 1.6rem;
-    width: 90vw;
+    /* width: 90vw; */
     margin: 0 auto;
     font-family: 'Poppins';
   }
