@@ -48,7 +48,7 @@ const Hero = () => {
         <SocialMediaIcons />
       </HeroInfoContainer>
       <HeroImageContainer>
-        <StaticImage src="../images/hero.svg" placeholder="tracedSVG" />
+        <StaticImage src="../assets/images/hero.svg" placeholder="tracedSVG" />
       </HeroImageContainer>
     </HeroGrid>
   )

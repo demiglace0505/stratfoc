@@ -40,11 +40,12 @@ const About = () => {
       <Seo title="About" />
       <AvatarContainer>
         <StaticImage
-          src="../images/profile_picture.jpg"
+          src="../assets/images/profile_picture.jpg"
           width={300}
           layout="constrained"
           alt="Profile picture"
           placeholder="dominantColor"
+          imgClassName="about-profilePicture"
         />
       </AvatarContainer>
       <ContentContainer>

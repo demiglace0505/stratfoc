@@ -47,9 +47,10 @@ const Header = () => {
       <NavLogoContainer>
         <Link to="/">
           <StaticImage
-            src="../images/Stratfoc-light.svg"
+            src="../assets/images/Stratfoc-light.svg"
             alt="Stratfoc logo"
             placeholder="tracedSVG"
+            width={200}
           />
         </Link>
       </NavLogoContainer>
