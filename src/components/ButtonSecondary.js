@@ -1,8 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { shadows } from "../theme/shadows.js"
-import { colors } from "../theme/colors.js"
+import { colors } from "../theme/colors"
 
 const Button = styled.button`
   &,
@@ -28,7 +27,7 @@ const Button = styled.button`
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: ${shadows.shadowLight};
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     background-color: ${colors.colorPrimaryDark};
 
     &::after {
@@ -39,10 +38,10 @@ const Button = styled.button`
 
   &:active {
     transform: translate(-1px);
-    box-shadow: ${shadows.shadowLight};
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   }
 
-  /* &::after {
+  &::after {
     content: "";
     display: inline-block;
     height: 100%;
@@ -60,7 +59,7 @@ const Button = styled.button`
     animation-timing-function: ease-in-out;
     animation-delay: 0.75s;
     animation-fill-mode: backwards;
-  } */
+  }
 `
 
 const ButtonCTA = ({ text }) => {

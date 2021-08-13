@@ -1,3 +1,3 @@
 export const animations = {
-  hover: "all 0.3s ease-out",
+  hover: "all 0.5s ease-out",
 }

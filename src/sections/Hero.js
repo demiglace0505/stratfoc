@@ -2,8 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+import { rgba } from "polished"
 
-import { backgrounds } from "../theme/colors.js"
+import { backgrounds, colors } from "../theme/colors.js"
 import ButtonCTA from "../components/ButtonCTA.js"
 import HeroHeaderText from "../components/HeroHeaderText.js"
 import HeroSubheaderText from "../components/HeroSubheaderText.js"
@@ -18,7 +19,12 @@ const HeroGrid = styled.section`
 
 const HeroColor = styled.div`
   height: 100%;
-  background-color: ${backgrounds.bgContentLight};
+  /* background-color: ${backgrounds.bgContentLight}; */
+  background-image: linear-gradient(
+    to left bottom,
+    ${rgba(backgrounds.bgContentLight, 0.4)},
+    ${rgba(colors.colorAccent1, 0.4)}
+  );
   grid-row: 1/1;
   grid-column: 1/8;
 `

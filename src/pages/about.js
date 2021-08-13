@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import { colors } from "../theme/colors.js"
 import Seo from "../components/seo.js"
+import AnimatedHeader from "../components/AnimatedHeader.js"
 
 const AboutGrid = styled.section`
   display: grid;
@@ -19,7 +20,7 @@ const AvatarContainer = styled.div`
   height: 100%;
 `
 
-const ContentContainer = styled.div`
+const ContentContainer = styled.article`
   align-self: stretch;
   grid-row: 1/1;
   grid-column: 6/12;
@@ -28,7 +29,7 @@ const ContentContainer = styled.div`
 const ContentHeading = styled.h2`
   font-size: 4rem;
   font-weight: bold;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.2rem;
   margin-bottom: 2rem;
   color: ${colors.colorPrimaryDark};
   font-family: "Courier";
@@ -49,7 +50,7 @@ const About = () => {
         />
       </AvatarContainer>
       <ContentContainer>
-        <ContentHeading>Serialize yourself.</ContentHeading>
+        <AnimatedHeader text="Serialize yourself." />
         <p>
           My name is Christian Cruz, and I am based in the Philippines. After I
           graduated with a Bachelor's degree in Engineering, I worked hard to

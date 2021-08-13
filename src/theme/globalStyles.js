@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   *::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; // ensures that padding and border are included in the total width and height
     /* CSS wireframe mode */
     /* outline: 2px solid blue; */
   }
