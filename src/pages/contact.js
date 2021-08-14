@@ -11,7 +11,8 @@ import TextArea from "../components/TextArea.js"
 import Input from "../components/Input.js"
 import Seo from "../components/seo.js"
 
-const PageContainer = styled.section`
+const PageContainer = styled.main`
+  min-height: calc(100vh - 7rem);
   padding: 8rem;
   background: linear-gradient(
     to right bottom,

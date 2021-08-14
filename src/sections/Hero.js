@@ -10,8 +10,8 @@ import HeroHeaderText from "../components/HeroHeaderText.js"
 import HeroSubheaderText from "../components/HeroSubheaderText.js"
 import SocialMediaIcons from "../components/SocialMediaIcons.js"
 
-const HeroGrid = styled.section`
-  /* height: 80vh; */
+const HeroGrid = styled.main`
+  min-height: calc(100vh - 7rem);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;

@@ -6,7 +6,8 @@ import { colors } from "../theme/colors.js"
 import Seo from "../components/seo.js"
 import AnimatedHeader from "../components/AnimatedHeader.js"
 
-const AboutGrid = styled.section`
+const AboutGrid = styled.main`
+  min-height: calc(100vh - 7rem);
   display: grid;
   padding: 8rem;
   grid-template-columns: repeat(12, 1fr);
