@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Seo from "../components/seo.js"
@@ -30,7 +31,9 @@ const NotFoundPage = () => {
         ></StaticImage>
       </LogoContainer>
       <AnimatedHeader text="404: Page doesn't exist" />
-      <ButtonCTA text="Return Home" />
+      <Link to="/">
+        <ButtonCTA text="Return Home" />
+      </Link>
     </PageContainer>
   )
 }

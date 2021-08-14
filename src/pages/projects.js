@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Seo from "../components/seo.js"
@@ -29,7 +30,9 @@ const Projects = () => {
         ></StaticImage>
       </LogoContainer>
       <h1>This page is currently under construction</h1>
-      <ButtonCTA text="Return Home" />
+      <Link to="/">
+        <ButtonCTA text="Return Home" />
+      </Link>
     </PageContainer>
   )
 }
