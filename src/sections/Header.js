@@ -48,7 +48,7 @@ const Header = () => {
         <Link to="/">
           <StaticImage
             src="../assets/images/Stratfoc-light.svg"
-            alt="Stratfoc logo"
+            alt="Stratfoc"
             placeholder="tracedSVG"
             width={200}
           />

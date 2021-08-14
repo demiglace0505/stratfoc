@@ -11,7 +11,7 @@ import HeroSubheaderText from "../components/HeroSubheaderText.js"
 import SocialMediaIcons from "../components/SocialMediaIcons.js"
 
 const HeroGrid = styled.section`
-  height: 80vh;
+  /* height: 80vh; */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
@@ -51,10 +51,14 @@ const Hero = () => {
         <Link to="/contact">
           <ButtonCTA text="get in touch" />
         </Link>
-        <SocialMediaIcons />
+        <SocialMediaIcons dark />
       </HeroInfoContainer>
       <HeroImageContainer>
-        <StaticImage src="../assets/images/hero.svg" placeholder="tracedSVG" />
+        <StaticImage
+          src="../assets/images/hero.svg"
+          placeholder="tracedSVG"
+          alt="Hero Image"
+        />
       </HeroImageContainer>
     </HeroGrid>
   )

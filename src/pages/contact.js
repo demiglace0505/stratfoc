@@ -53,10 +53,9 @@ const Contact = () => {
         <TextContainer>
           <AnimatedHeader text="Get in touch.">Get in touch.</AnimatedHeader>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
-            dolores aut, deleniti reprehenderit, illum dolorem ab adipisci
-            architecto, vel neque consequuntur magnam maiores eligendi magni!
-            Accusantium quos minus corrupti ab!
+            I would love to hear from you. Whether it is for brainstorming or
+            opportunities for building the next big thing, get in touch by
+            filling up the contact form.
           </p>
         </TextContainer>
         <form

@@ -14,18 +14,21 @@ const SocialMediaIconsContainer = styled.div`
 const Icon = styled.a`
   margin-right: 1.4rem;
   font-size: 3.2rem;
+  transition: all 0.4s ease-out;
+  color: ${props => (props.dark ? colors.colorAccent1 : colors.colorAccent2)};
 
   &:hover {
-    color: ${colors.colorPrimaryDark};
+    color: ${props =>
+      props.dark ? colors.colorPrimaryDark : colors.colorPrimary};
   }
 `
 
-const SocialMediaIcons = () => {
+const SocialMediaIcons = props => {
   return (
     <SocialMediaIconsContainer>
       {socialLinks.map(s => {
         return (
-          <Icon href={s.url} key={s.id}>
+          <Icon dark={props.dark} href={s.url} key={s.id} target="_blank">
             {s.icon}
           </Icon>
         )
