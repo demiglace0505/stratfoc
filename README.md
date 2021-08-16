@@ -79,3 +79,39 @@ For the global fonts, the plugin [gatsby-plugin-google-fonts](https://www.gatsby
   }
 ```
 
+### Setting up Strapi and MongoDB
+
+I created a new MongoDB project for this application. I granted **atlasAdmin@admin** role to my user, and whitelisted my IP address. Afterwards I ran the command for bootstrapping a strapi app.
+
+```
+npx create-strapi-app stratfoc-backend
+```
+
+I setup a custom installation, choosing MongoDB for the database and connecting using the Mongo Node.js driver.
+
+I setup the project parameters following the [official documentation](https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/configurations/databases/mongodb.html). Inside the strapi backend directory, I configured config/database.js
+
+```javascript
+module.exports = ({ env }) => ({
+  defaultConnection: 'default',
+  connections: {
+    default: {
+      connector: 'mongoose',
+      settings: {
+        uri: env('DATABASE_URI'),
+        srv: env.bool('DATABASE_SRV', false),
+        port: env.int('DATABASE_PORT', 27017),
+        database: env('DATABASE_NAME', 'stratfoc-backend'),
+      },
+      options: {
+        authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
+        ssl: env.bool('DATABASE_SSL', false),
+      },
+    },
+  },
+});
+
+```
+
+The DATABASE_URI variable is obtained from the MongoDB Atlas Connect mode, the fields to replace from the connect string are the username, password, and database name.
+

@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import { colors, backgrounds } from "../theme/colors.js"
 
-const Header = styled.h2`
+const AnimatedHeader = styled.h2`
   /* font-size: 4rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
@@ -39,8 +39,8 @@ const Header = styled.h2`
   }
 `
 
-const AnimatedHeader = ({ text }) => {
-  return <Header>{text}</Header>
-}
+// const AnimatedHeader = ({ text }) => {
+//   return <Header>{text}</Header>
+// }
 
 export default AnimatedHeader

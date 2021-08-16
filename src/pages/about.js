@@ -51,7 +51,7 @@ const About = () => {
         />
       </AvatarContainer>
       <ContentContainer>
-        <AnimatedHeader text="Serialize yourself." />
+        <AnimatedHeader>Serialize Yourself.</AnimatedHeader>
         <p>
           My name is Christian Cruz, and I am based in the Philippines. After I
           graduated with a Bachelor's degree in Engineering, I worked hard to

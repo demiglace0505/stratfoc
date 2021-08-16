@@ -46,10 +46,10 @@ const Hero = () => {
     <HeroGrid>
       <HeroColor />
       <HeroInfoContainer>
-        <HeroHeaderText text="Christian Cruz" />
-        <HeroSubheaderText text="Full Stack Developer" />
+        <HeroHeaderText>Christian Cruz</HeroHeaderText>
+        <HeroSubheaderText>Full Stack Developer</HeroSubheaderText>
         <Link to="/contact">
-          <ButtonCTA text="get in touch" />
+          <ButtonCTA>Get in Touch</ButtonCTA>
         </Link>
         <SocialMediaIcons dark />
       </HeroInfoContainer>

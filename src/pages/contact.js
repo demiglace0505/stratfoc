@@ -52,7 +52,7 @@ const Contact = () => {
       <Seo title="Contact" />
       <FormContainer>
         <TextContainer>
-          <AnimatedHeader text="Get in touch.">Get in touch.</AnimatedHeader>
+          <AnimatedHeader>Get in touch.</AnimatedHeader>
           <p>
             I would love to hear from you. Whether it is for brainstorming or
             opportunities for building the next big thing, get in touch by
@@ -84,7 +84,7 @@ const Contact = () => {
             placeholder="Your message"
             required
           ></TextArea>
-          <ButtonCTA type="submit" text="Submit"></ButtonCTA>
+          <ButtonCTA type="submit">Submit</ButtonCTA>
         </form>
       </FormContainer>
     </PageContainer>

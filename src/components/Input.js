@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { colors } from "../theme/colors.js"
 import { shadows } from "../theme/shadows.js"
 
-const FormInput = styled.input`
+const Input = styled.input`
   display: block;
   font-size: 1.5rem;
   font-family: inherit;
@@ -29,16 +29,16 @@ const FormInput = styled.input`
   }
 `
 
-const Input = ({ type, name, placeholder, required, autocomplete }) => {
-  return (
-    <FormInput
-      type={type}
-      name={name}
-      placeholder={placeholder}
-      required={required}
-      autocomplete={autocomplete}
-    />
-  )
-}
+// const Input = ({ type, name, placeholder, required, autocomplete }) => {
+//   return (
+//     <FormInput
+//       type={type}
+//       name={name}
+//       placeholder={placeholder}
+//       required={required}
+//       autocomplete={autocomplete}
+//     />
+//   )
+// }
 
 export default Input

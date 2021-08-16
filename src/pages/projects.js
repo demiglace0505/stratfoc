@@ -31,7 +31,7 @@ const Projects = () => {
       </LogoContainer>
       <h1>This page is currently under construction</h1>
       <Link to="/">
-        <ButtonCTA text="Return Home" />
+        <ButtonCTA>Return Home</ButtonCTA>
       </Link>
     </PageContainer>
   )

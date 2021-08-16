@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { shadows } from "../theme/shadows.js"
 import { colors } from "../theme/colors.js"
 
-const Button = styled.button`
+const ButtonCTA = styled.button`
   &,
   &:link,
   &:visited {
@@ -62,9 +62,5 @@ const Button = styled.button`
     animation-fill-mode: backwards;
   } */
 `
-
-const ButtonCTA = ({ text }) => {
-  return <Button className="animated">{text}</Button>
-}
 
 export default ButtonCTA

@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { colors } from "../theme/colors.js"
 import { shadows } from "../theme/shadows.js"
 
-const StyledTextArea = styled.textarea`
+const TextArea = styled.textarea`
   resize: none;
   display: block;
   font-size: 1.5rem;
@@ -30,15 +30,15 @@ const StyledTextArea = styled.textarea`
   }
 `
 
-const TextArea = ({ name, placeholder, rows, required }) => {
-  return (
-    <StyledTextArea
-      name={name}
-      placeholder={placeholder}
-      rows={rows}
-      required={required}
-    />
-  )
-}
+// const TextArea = ({ name, placeholder, rows, required }) => {
+//   return (
+//     <StyledTextArea
+//       name={name}
+//       placeholder={placeholder}
+//       rows={rows}
+//       required={required}
+//     />
+//   )
+// }
 
 export default TextArea
