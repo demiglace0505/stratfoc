@@ -2,9 +2,11 @@ import React from "react"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
 
-import { colors } from "../theme/colors.js"
 import Seo from "../components/seo.js"
+import { colors } from "../theme/colors.js"
+import { frontend, backend, misc } from "../constants/techStack.js"
 import AnimatedHeader from "../components/AnimatedHeader.js"
+import TechStackIcons from "../components/TechStackIcons.js"
 
 const AboutGrid = styled.main`
   min-height: calc(100vh - 7rem);
@@ -68,6 +70,12 @@ const About = () => {
           technology. My hobbies include playing video games and mindlessly
           getting lost in the internet.
         </p>
+        <h2>Frontend</h2>
+        <TechStackIcons array={frontend} />
+        <h2>Backend</h2>
+        <TechStackIcons array={backend} />
+        <h2>Worth Mentioning</h2>
+        <TechStackIcons array={misc} />
       </ContentContainer>
     </AboutGrid>
   )

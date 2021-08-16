@@ -125,7 +125,7 @@ export const misc = [
   },
   {
     id: 2,
-    name: "aws",
+    name: "amazon web services",
     icon: <SiAmazonaws></SiAmazonaws>,
     url: "https://aws.amazon.com/",
   },

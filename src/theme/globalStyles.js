@@ -42,16 +42,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 3.4rem;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   h3 {
-    font-size: 1.25rem;
+    font-size: 2.2rem;
   }
   h4 {
-    font-size: 0.875rem;
+    font-size: 1.6rem;
   }
 `
 
