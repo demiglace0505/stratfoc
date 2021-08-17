@@ -4,9 +4,11 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Seo from "../components/seo.js"
 import { colors } from "../theme/colors.js"
-import { frontend, backend, misc } from "../constants/techStack.js"
+import { frontend, backend, misc, testing } from "../constants/techStack.js"
 import AnimatedHeader from "../components/AnimatedHeader.js"
 import TechStackIcons from "../components/TechStackIcons.js"
+import Header from "../components/Header.js"
+import Subheader from "../components/Subheader.js"
 
 const AboutGrid = styled.main`
   min-height: calc(100vh - 7rem);
@@ -27,15 +29,6 @@ const ContentContainer = styled.article`
   align-self: stretch;
   grid-row: 1/1;
   grid-column: 6/12;
-`
-
-const ContentHeading = styled.h2`
-  font-size: 4rem;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-  margin-bottom: 2rem;
-  color: ${colors.colorPrimaryDark};
-  font-family: "Courier";
 `
 
 const About = () => {
@@ -70,11 +63,18 @@ const About = () => {
           technology. My hobbies include playing video games and mindlessly
           getting lost in the internet.
         </p>
-        <h2>Frontend</h2>
+        <Header>Tech Stack and Expertise</Header>
+        <p>
+          Whether front end or back end, I've got it covered. Have a look of the
+          myriad of technologies that I have proven experience working with.
+        </p>
+        <Subheader>Frontend Technologies</Subheader>
         <TechStackIcons array={frontend} />
-        <h2>Backend</h2>
+        <Subheader>Backend</Subheader>
         <TechStackIcons array={backend} />
-        <h2>Worth Mentioning</h2>
+        <Subheader>Testing Frameworks</Subheader>
+        <TechStackIcons array={testing} />
+        <Subheader>Worth Mentioning</Subheader>
         <TechStackIcons array={misc} />
       </ContentContainer>
     </AboutGrid>

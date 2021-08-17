@@ -22,6 +22,7 @@ import {
   SiHeroku,
   SiNetlify,
   SiFirebase,
+  SiJest
 } from "react-icons/si"
 
 import { FaCode } from "react-icons/fa"
@@ -118,57 +119,72 @@ export const backend = [
 
 export const misc = [
   {
-    id: 1,
+    id: 2,
     name: "git",
     icon: <SiGit></SiGit>,
     url: "https://git-scm.com/",
   },
   {
-    id: 2,
+    id: 3,
     name: "amazon web services",
     icon: <SiAmazonaws></SiAmazonaws>,
     url: "https://aws.amazon.com/",
   },
   {
-    id: 3,
+    id: 4,
     name: "azure",
     icon: <SiMicrosoftazure></SiMicrosoftazure>,
     url: "https://azure.microsoft.com/en-us/",
   },
   {
-    id: 4,
+    id: 5,
     name: "java",
     icon: <SiJava></SiJava>,
     url: "https://www.java.com/en/",
   },
   {
-    id: 5,
+    id: 6,
     name: "wordpress",
     icon: <SiWordpress></SiWordpress>,
     url: "https://wordpress.org/",
   },
   {
-    id: 6,
+    id: 7,
     name: "php",
     icon: <SiPhp></SiPhp>,
     url: "https://www.php.net/",
   },
   {
-    id: 7,
+    id: 8,
     name: "heroku",
     icon: <SiHeroku></SiHeroku>,
     url: "https://www.heroku.com/",
   },
   {
-    id: 8,
+    id: 9,
     name: "netlify",
     icon: <SiNetlify></SiNetlify>,
     url: "https://www.netlify.com/",
   },
   {
-    id: 9,
+    id: 10,
     name: "firebase",
     icon: <SiFirebase></SiFirebase>,
     url: "https://firebase.google.com/",
+  },
+]
+
+export const testing = [
+  {
+    id: 1,
+    name: "jest",
+    icon: <SiJest></SiJest>,
+    url: "https://jestjs.io/",
+  },
+  {
+    id: 2,
+    name: "cypress",
+    icon: <FaCode></FaCode>,
+    url: "https://www.cypress.io/",
   },
 ]
