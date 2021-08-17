@@ -22,7 +22,7 @@ import {
   SiHeroku,
   SiNetlify,
   SiFirebase,
-  SiJest
+  SiJest,
 } from "react-icons/si"
 
 import { FaCode } from "react-icons/fa"
@@ -126,7 +126,7 @@ export const misc = [
   },
   {
     id: 3,
-    name: "amazon web services",
+    name: "aws",
     icon: <SiAmazonaws></SiAmazonaws>,
     url: "https://aws.amazon.com/",
   },

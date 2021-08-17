@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import { colors, backgrounds } from "../theme/colors.js"
+import { animations } from "../theme/animations.js"
 
 const StackGroupContainer = styled.div`
   display: flex;
@@ -17,6 +18,13 @@ const StackItem = styled.a`
   border-radius: 0.4rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
+  transition: ${animations.hover};
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: ${colors.colorAccent1};
+    color: ${colors.colorWhite};
+  }
 `
 
 const StackIcon = styled.span`
