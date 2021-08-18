@@ -18,7 +18,7 @@ const AvatarContainer = styled.div`
   grid-row: 1/1;
   grid-column: 2/6;
   height: 100%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 `
 
 const ContentContainer = styled.article`
@@ -40,7 +40,6 @@ const AboutSelf = () => {
             placeholder="dominantColor"
             imgClassName="about-profilePicture"
           />
-          help
         </AvatarContainer>
         <ContentContainer>
           <AnimatedHeader>Serialize Yourself.</AnimatedHeader>

@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import { rgba } from "polished"
+import { FaDownload } from "react-icons/fa"
 
 import { backgrounds, colors } from "../theme/colors.js"
 import ButtonCTA from "../components/ButtonCTA.js"
@@ -51,6 +52,11 @@ const Hero = () => {
         <Link to="/contact">
           <ButtonCTA>Get in Touch</ButtonCTA>
         </Link>
+        <a href={`CV.pdf`} download>
+          <ButtonCTA>
+            <FaDownload></FaDownload> CV
+          </ButtonCTA>
+        </a>
         <SocialMediaIcons dark />
       </HeroInfoContainer>
       <HeroImageContainer>

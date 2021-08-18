@@ -7,6 +7,7 @@ import { animations } from "../theme/animations.js"
 const StackGroupContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 `
 
 const StackItem = styled.a`

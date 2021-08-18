@@ -23,6 +23,7 @@ import {
   SiNetlify,
   SiFirebase,
   SiJest,
+  SiNpm,
 } from "react-icons/si"
 
 import { FaCode } from "react-icons/fa"
@@ -156,18 +157,24 @@ export const misc = [
   },
   {
     id: 8,
+    name: "npm",
+    icon: <SiNpm></SiNpm>,
+    url: "https://www.npmjs.com/",
+  },
+  {
+    id: 9,
     name: "heroku",
     icon: <SiHeroku></SiHeroku>,
     url: "https://www.heroku.com/",
   },
   {
-    id: 9,
+    id: 10,
     name: "netlify",
     icon: <SiNetlify></SiNetlify>,
     url: "https://www.netlify.com/",
   },
   {
-    id: 10,
+    id: 11,
     name: "firebase",
     icon: <SiFirebase></SiFirebase>,
     url: "https://firebase.google.com/",

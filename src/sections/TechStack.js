@@ -62,8 +62,8 @@ const Card = styled.div`
 `
 
 const CardIcon = styled.div`
-  font-size: 6rem;
-  /* margin-bottom: 0.2rem; */
+  font-size: 6.6rem;
+  margin-bottom: 0.2rem;
   color: ${colors.colorAccent1};
 `
 
