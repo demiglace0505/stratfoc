@@ -25,7 +25,7 @@ const NotFoundPage = () => {
       <Seo title="Projects" />
       <LogoContainer>
         <StaticImage
-          src="../assets/images/logo-dark.svg"
+          src="../assets/images/logo-dark.png"
           alt="Stratfoc Logo"
           placeholder="tracedSVG"
         ></StaticImage>

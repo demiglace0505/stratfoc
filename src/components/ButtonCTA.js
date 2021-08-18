@@ -8,6 +8,7 @@ const ButtonCTA = styled.button`
   &,
   &:link,
   &:visited {
+    margin-right: 1.2rem;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1rem 2rem;
@@ -39,7 +40,7 @@ const ButtonCTA = styled.button`
 
   &:active {
     transform: translate(-1px);
-    box-shadow: ${shadows.shadowLight};
+    box-shadow: ${shadows.shadowHard};
   }
 
   /* &::after {

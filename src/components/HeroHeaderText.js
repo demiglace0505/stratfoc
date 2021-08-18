@@ -4,12 +4,19 @@ import styled from "styled-components"
 import { colors } from "../theme/colors"
 
 const HeroHeaderText = styled.h1`
-  font-size: 6rem;
+  font-size: 6.6rem;
   font-weight: 400;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.6rem;
   margin-bottom: 0.4rem;
-  color: ${colors.colorPrimaryDark};
   font-family: "Fjalla One";
+
+  background-image: linear-gradient(
+    to right,
+    ${colors.colorPrimaryDark},
+    ${colors.colorPrimary}
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 `
 
 // const HeroHeaderText = ({ text }) => {
