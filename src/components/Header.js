@@ -3,13 +3,15 @@ import styled from "styled-components"
 
 import { colors } from "../theme/colors.js"
 
-const Header = styled.h3`
-  font-size: 2.2rem;
+const Header = styled.h2`
+  font-size: 3.2rem;
   font-weight: bold;
+  text-align: center;
   padding: 0.6rem 1.2rem;
-  margin-bottom: 0.6rem;
-  letter-spacing: 0.3rem;
-  color: ${colors.colorGrey5};
+  margin-bottom: 2rem;
+  letter-spacing: 0.9rem;
+  text-transform: uppercase;
+  color: ${colors.colorBlack};
 `
 
 export default Header

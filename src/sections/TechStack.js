@@ -6,6 +6,8 @@ import { IoFlaskOutline } from "react-icons/io5"
 import { IoSettingsOutline } from "react-icons/io5"
 import { SiSonarcloud } from "react-icons/si"
 
+import Header from "../components/Header.js"
+import Subheader from "../components/Subheader.js"
 import techBackground from "../assets/images/techBackground.jpg"
 import { colors, backgrounds } from "../theme/colors.js"
 import { shadows } from "../theme/shadows.js"
@@ -67,26 +69,26 @@ const CardIcon = styled.div`
   color: ${colors.colorAccent1};
 `
 
-const Header = styled.h2`
-  font-size: 3.2rem;
-  font-weight: bold;
-  text-align: center;
-  padding: 0.6rem 1.2rem;
-  margin-bottom: 2rem;
-  letter-spacing: 0.9rem;
-  text-transform: uppercase;
-  color: ${colors.colorBlack};
-`
+// const Header = styled.h2`
+//   font-size: 3.2rem;
+//   font-weight: bold;
+//   text-align: center;
+//   padding: 0.6rem 1.2rem;
+//   margin-bottom: 2rem;
+//   letter-spacing: 0.9rem;
+//   text-transform: uppercase;
+//   color: ${colors.colorBlack};
+// `
 
-const Subheader = styled.h3`
-  font-size: 2.2rem;
-  font-weight: 500;
-  text-align: center;
-  padding: 0.3rem 1rem;
-  margin-bottom: 2rem;
-  letter-spacing: 0.2rem;
-  color: ${colors.colorGrey5};
-`
+// const Subheader = styled.h3`
+//   font-size: 2.2rem;
+//   font-weight: 500;
+//   text-align: center;
+//   padding: 0.3rem 1rem;
+//   margin-bottom: 2rem;
+//   letter-spacing: 0.2rem;
+//   color: ${colors.colorGrey5};
+// `
 
 const CardHeader = styled.h4`
   text-transform: uppercase;

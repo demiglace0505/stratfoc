@@ -115,3 +115,51 @@ module.exports = ({ env }) => ({
 
 The DATABASE_URI variable is obtained from the MongoDB Atlas Connect mode, the fields to replace from the connect string are the username, password, and database name.
 
+### Connecting with Strapi
+
+In order to be able to access our API in Gatsby with GraphQL, the plugin [gatsby-source-strapi](https://www.gatsbyjs.com/plugins/gatsby-source-strapi/?=source-strapi) needs to be installed. The gatsby-config is updated as such to resolved the plugin. At this moment, only the work-experience collection type was configured.
+
+```js
+     {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337`,
+        queryLimit: 1000, // Defaults to 100
+        collectionTypes: [`work-experience`],
+       // singleTypes: [`home-page`, `contact`],
+      },
+```
+
+I should be able to query for the work-experiences endpoint via GraphQL now.
+
+```js
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+
+const WorkExperience = () => {
+  const data = useStaticQuery(query)
+  return (
+    <div>{data.allStrapiWorkExperience.nodes.map(item => item.company)}</div>
+  )
+}
+
+const query = graphql`
+  {
+    allStrapiWorkExperience(sort: {fields: createdAt, order: DESC}) {
+      nodes {
+        company
+        date
+        position
+        jobDescription {
+          jobDescription
+          id
+        }
+      }
+    }
+  }
+`
+
+export default WorkExperience
+
+```
+
