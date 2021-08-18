@@ -1,9 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Strategic Focus`,
-    description: `Serialize Yourself. Christitan Cruz portfolio page built with GatsbyJS`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Stratfoc`,
+    description: `A portfolio website built in ReactJS and Gatsby by CHRISTIAN CRUZ.`,
+    titleTemplate: `%s | Strategic Focus`,
+    author: `@stratfoc`,
+    url: `https://stratfoc.netlify.app`,
+    image: "/mainimg.png",
+    twitterUsername: "@demiglace0505",
   },
   plugins: [
     `gatsby-plugin-styled-components`,

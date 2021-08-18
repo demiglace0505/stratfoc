@@ -163,3 +163,18 @@ export default WorkExperience
 
 ```
 
+### SEO
+
+To improve the SEO of the site, I added siteMetadata to the gatsby-config. It is important to note that the siteUrl has the end "/" removed.
+
+```js
+siteMetadata: {
+    title: `Stratfoc`,
+    description: `A portfolio website built in ReactJS and Gatsby by CHRISTIAN CRUZ.`,
+    titleTemplate: `%s | Strategic Focus`,
+    author: `@stratfoc`,
+    siteUrl: `https://stratfoc.netlify.app`,
+    image: "/mainimg.png",
+  },
+```
+
