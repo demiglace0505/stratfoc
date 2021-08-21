@@ -10,7 +10,6 @@ const About = () => {
     <div>
       <Seo title="About" />
       <AboutSelf />
-      <TechStack />
     </div>
   )
 }

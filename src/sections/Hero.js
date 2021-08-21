@@ -52,7 +52,7 @@ const Hero = () => {
         <Link to="/contact">
           <ButtonCTA>Get in Touch</ButtonCTA>
         </Link>
-        <a href={`CV.pdf`} download>
+        <a href={`CV.pdf`} target="_blank">
           <ButtonCTA>
             <FaDownload></FaDownload> CV
           </ButtonCTA>
