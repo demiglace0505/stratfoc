@@ -37,10 +37,19 @@ const FooterText = styled.h5`
   font-weight: 300;
   letter-spacing: 0.2rem;
   color: ${colors.colorWhite};
+  margin-bottom: 0.4rem;
 
   span {
     color: ${colors.colorPrimary};
   }
+`
+
+const FooterAddress = styled.h6`
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0.6rem;
+  color: ${colors.colorGrey2};
 `
 
 const Footer = () => {
@@ -54,9 +63,13 @@ const Footer = () => {
       ></StaticImage>
       <FooterContentContainer>
         <FooterText>
-          Copyright &copy; {new Date().getFullYear()} <span>Stratfoc</span>.
           This site is built by Christian Cruz with React and GatsbyJS.
         </FooterText>
+        <FooterText>
+          Copyright &copy; {new Date().getFullYear()} <span>Stratfoc</span>. All
+          Rights Reserved.
+        </FooterText>
+        <FooterAddress>Bulacan | Philippines</FooterAddress>
         <SocialMediaIconsContainer>
           <SocialMediaIcons />
         </SocialMediaIconsContainer>
