@@ -26,6 +26,9 @@ const SectionContainer = styled.section`
     ),
     url(${techBackground});
   background-size: cover;
+  /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; */
 `
 
 const TechStackContainer = styled.div`

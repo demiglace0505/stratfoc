@@ -48,6 +48,10 @@ const SEO = ({ title, description, image, article }) => {
 
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
+      <meta
+        name="google-site-verification"
+        content="LWaPBGRwliKp5Ze_dbPwVW64PPCWP2RiNoL7U6gcQiw"
+      />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
 

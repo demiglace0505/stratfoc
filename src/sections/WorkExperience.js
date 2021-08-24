@@ -96,7 +96,7 @@ const JobDescriptionContainer = styled.div`
   grid-template-columns: auto 1fr;
   align-items: center;
   column-gap: 1.8rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.7rem;
 `
 
 const Chevron = styled.i`

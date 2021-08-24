@@ -5,7 +5,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Seo from "../components/seo.js"
 import ButtonCTA from "../components/ButtonCTA.js"
-import AnimatedHeader from "../components/AnimatedHeader.js"
 
 const PageContainer = styled.main`
   display: flex;
@@ -30,9 +29,10 @@ const NotFoundPage = () => {
           placeholder="tracedSVG"
         ></StaticImage>
       </LogoContainer>
-      <AnimatedHeader text="404: Page doesn't exist" />
+      <h1>404: The page you are trying to access does not exist</h1>
+
       <Link to="/">
-        <ButtonCTA text="Return Home" />
+        <ButtonCTA>Return Home</ButtonCTA>
       </Link>
     </PageContainer>
   )

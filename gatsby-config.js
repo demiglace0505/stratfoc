@@ -5,10 +5,12 @@ module.exports = {
     titleTemplate: `%s | Strategic Focus`,
     author: `@stratfoc`,
     url: `https://stratfoc.netlify.app`,
+    siteUrl: "https://stratfoc.netlify.app",
     image: "/mainimg.png",
     twitterUsername: "@demiglace0505",
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-plugin-google-fonts",
