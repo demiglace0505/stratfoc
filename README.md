@@ -117,7 +117,7 @@ The DATABASE_URI variable is obtained from the MongoDB Atlas Connect mode, the f
 
 ### Connecting with Strapi
 
-In order to be able to access our API in Gatsby with GraphQL, the plugin [gatsby-source-strapi](https://www.gatsbyjs.com/plugins/gatsby-source-strapi/?=source-strapi) needs to be installed. The gatsby-config is updated as such to resolved the plugin. At this moment, only the work-experience collection type was configured.
+In order to be able to access our API in Gatsby with GraphQL, the plugin [gatsby-source-strapi](https://www.gatsbyjs.com/plugins/gatsby-source-strapi/?=source-strapi) needs to be installed. The gatsby-config is updated as such to resolve the plugin.
 
 ```js
      {
@@ -125,12 +125,12 @@ In order to be able to access our API in Gatsby with GraphQL, the plugin [gatsby
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Defaults to 100
-        collectionTypes: [`work-experience`],
+        collectionTypes: [`work-experience`, `projects`],
        // singleTypes: [`home-page`, `contact`],
       },
 ```
 
-I should be able to query for the work-experiences endpoint via GraphQL now.
+I should be able to query for the work-experiences API endpoint via GraphQL now.
 
 ```js
 import React from "react"
