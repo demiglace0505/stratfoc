@@ -15,7 +15,11 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: ["Poppins: 400, 700", "Fjalla One: 400"],
+        fonts: [
+          "Poppins: 200, 300, 400, 500, 600, 700",
+          "Fjalla One: 400",
+          "Architects Daughter: 400, 500, 600",
+        ],
       },
     },
     `gatsby-plugin-react-helmet`,

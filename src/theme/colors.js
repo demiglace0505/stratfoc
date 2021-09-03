@@ -3,6 +3,7 @@ export const backgrounds = {
   bgGreyLight: "#eeeeee",
   bgContentDark: "#231f2b",
   bgContentLight: "#e4cdf4",
+  bgOffWhite: "#f1e7e0",
 }
 
 export const colors = {
