@@ -1,40 +1,78 @@
 import React from "react"
+import { graphql } from "gatsby"
 import styled from "styled-components"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { rgba } from "polished"
 
+import { colors } from "../theme/colors.js"
 import Seo from "../components/seo.js"
-import ButtonCTA from "../components/ButtonCTA.js"
+import ProjectCard from "../components/ProjectCard.js"
+import Header from "../components/Header.js"
+import Subheader from "../components/Subheader.js"
 
 const PageContainer = styled.main`
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
+  padding: 6rem;
   min-height: calc(100vh - 7rem);
+  background: linear-gradient(
+    to right bottom,
+    ${rgba(colors.colorAccent2, 1)},
+    ${rgba(colors.colorPrimaryLight, 1)}
+  );
 `
 
-const LogoContainer = styled.div`
-  margin: 4rem 0;
+const ProjectsContainer = styled.section`
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 2rem;
+  /* background-color: yellow; */
 `
 
-const Projects = () => {
+const Projects = ({ data }) => {
+  console.log(data)
+  const {
+    allStrapiProject: { edges: projects },
+  } = data
+  // console.log(projects)
   return (
     <PageContainer>
       <Seo title="Projects" />
-      <LogoContainer>
-        <StaticImage
-          src="../assets/images/logo-dark.png"
-          alt="Stratfoc Logo"
-          placeholder="tracedSVG"
-        ></StaticImage>
-      </LogoContainer>
-      <h1>This page is currently under construction</h1>
-      <Link to="/">
-        <ButtonCTA>Return Home</ButtonCTA>
-      </Link>
+      <Header>My Works and Projects</Header>
+      <Subheader>This page is under construction</Subheader>
+      <ProjectsContainer>
+        {projects.map(p => {
+          return <ProjectCard project={p.node} />
+        })}
+      </ProjectsContainer>
     </PageContainer>
   )
 }
+
+export const query = graphql`
+  {
+    allStrapiProject(sort: { order: ASC, fields: updatedAt }) {
+      edges {
+        node {
+          id
+          title
+          url
+          github
+          excerpt
+          featured
+          image {
+            localFile {
+              childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+              }
+            }
+          }
+          stack {
+            stack_name
+          }
+        }
+      }
+    }
+  }
+`
 
 export default Projects
