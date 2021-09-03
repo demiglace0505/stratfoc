@@ -29,9 +29,9 @@ const AvatarContainer = styled.div`
   box-shadow: ${shadows.shadowMed};
   transition: ${animations.hover};
   z-index: 1;
-  background-image: url(${profilePicture});
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: url(${profilePicture}); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
 
   &:hover {
     transform: scale(1.01) translateY(-4px);
@@ -68,13 +68,14 @@ const AboutHero = () => {
     <div>
       <AboutSelfContainer>
         <AvatarContainer>
-          {/* <StaticImage
+          <StaticImage
             src="../assets/images/profile_picture.jpg"
-            layout="fixed"
+            layout="fullWidth"
             alt="Profile picture"
             placeholder="dominantColor"
+            layout="constrained"
             // imgClassName="about-profilePicture"
-          /> */}
+          />
         </AvatarContainer>
         <ContentContainer>
           <AnimatedHeader>Serialize Yourself.</AnimatedHeader>
@@ -83,6 +84,11 @@ const AboutHero = () => {
             of Bulacan in the Philippines. After I graduated with a Bachelor's
             degree in Engineering, I enrolled myself to various programs and
             courses to learn programming and web development.
+          </p>
+          <p>
+            I mainly specialize in the MERN (Mongo, Express, React, Nodejs)
+            stack, but I am very much willing to take on other technologies as
+            well.
           </p>
         </ContentContainer>
       </AboutSelfContainer>
