@@ -163,6 +163,47 @@ export default WorkExperience
 
 ```
 
+### Setting up individual project pages programatically
+
+Project pages can be set up programatically by making use of the [File System Route API](https://www.gatsbyjs.com/docs/reference/routing/file-system-route-api/). This allows us to create dynamic pages for each of our project page. We can specifiy collection routes using curly braces **{}** in the filename to signify dynamic URL segments. In the case of this site, the collection route is `{StrapiProject.title}.js` and it is in the subdirectory **projects**. *StrapiProject* is from the GraphQL query *strapiProject*, and *title* is the field that we want to be passed into the page via the **pageContext** prop. The page template starter is illustrated by the following:
+
+```jsx
+const ProjectTemplate = ({ data, pageContext: { title } }) => {
+  const project = data.strapiProject
+  console.log("ProjectTemplate", data)
+  return (
+    <div>
+      <Seo
+        title={title.toUpperCase()}
+        description={project.description}
+        image={project.image.url}
+      />
+      <h4>{project.title}</h4>
+      {project.description}
+    </div>
+  )
+}
+
+export const query = graphql`
+  query getSingleProject($title: String) {
+    strapiProject(title: { eq: $title }) {
+      description
+      title
+      image {
+        url
+      }
+      github
+      url
+      stack {
+        stack_name
+      }
+    }
+  }
+`
+```
+
+This will generate pages for each StrapiProject node at `projects/title`
+
 ### SEO
 
 To improve the SEO of the site, I added siteMetadata to the gatsby-config. It is important to note that the siteUrl has the end "/" removed.
@@ -177,4 +218,6 @@ siteMetadata: {
     image: "/mainimg.png",
   },
 ```
+
+### 
 

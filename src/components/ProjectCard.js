@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { rgba } from "polished"
+import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 
@@ -46,9 +47,10 @@ const TechTag = styled.div`
 const CardHeader = styled.span`
   display: flex;
 
-  h3 {
-    margin-right: 1.4rem;
+  a {
     letter-spacing: 0.2rem;
+    margin-right: 1.4rem;
+    text-decoration: none;
   }
 `
 
@@ -64,17 +66,21 @@ const Icon = styled.a`
 `
 
 const ProjectCard = ({ project }) => {
-  console.log("ProjectCard", project)
+  // console.log("ProjectCard", project)
   return (
     <Card>
-      <GatsbyImage
-        image={getImage(project.image.localFile)}
-        alt={project.title}
-        className="project-img"
-      />
+      <Link to={`/projects/${project.slug}`}>
+        <GatsbyImage
+          image={getImage(project.image.localFile)}
+          alt={project.title}
+          className="project-img"
+        />
+      </Link>
       <CardDetailsContainer>
         <CardHeader>
-          <h3>{project.title}</h3>
+          <Link to={`/projects/${project.slug}`}>
+            <h3>{project.title}</h3>
+          </Link>
           <span>
             <Icon href={project.github} target="_blank">
               <FaGithubSquare />

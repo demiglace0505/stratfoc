@@ -50,15 +50,12 @@ const Projects = ({ data }) => {
 
 export const query = graphql`
   {
-    allStrapiProject(sort: { order: ASC, fields: updatedAt }) {
+    allStrapiProject(sort: {order: DESC, fields: updatedAt}) {
       edges {
         node {
-          id
-          title
-          url
-          github
           excerpt
           featured
+          github
           image {
             localFile {
               childImageSharp {
@@ -66,9 +63,13 @@ export const query = graphql`
               }
             }
           }
+          slug
           stack {
             stack_name
           }
+          title
+          url
+          updatedAt
         }
       }
     }
